@@ -4,35 +4,35 @@
 
 #define N 50
 
-void fill_vector(int V[N]);
-void modify_vector(int V[N]);
-void print_vector(int V[N]);
+void fill_array(int V[N]);
+void modify_array(int V[N]);
+void print_array(int V[N]);
 
 int main(void) {
     int V[N];
 
     srand(time(NULL));
 
-    fill_vector(V);
+    fill_array(V);
 
     printf("Vetor Original: \n");
-    print_vector(V);
+    print_array(V);
 
-    modify_vector(V);
+    modify_array(V);
 
     printf("\nVetor Modificado: \n");
-    print_vector(V);
+    print_array(V);
 
     return 0;
 }
 
-void fill_vector(int V[N]) {
+void fill_array(int V[N]) {
     for (int i = 0; i < N; i++) {
         V[i] = rand() % 100 + 1;
     }
 }
 
-void modify_vector(int V[N]) {
+void modify_array(int V[N]) {
     int total_sum = 0;
     
     for (int i = 0; i < N; i++) {
@@ -44,7 +44,7 @@ void modify_vector(int V[N]) {
     }
 }
 
-void print_vector(int V[N]) {
+void print_array(int V[N]) {
     for (int i = 0; i < N; i++) {
         printf("%4d  ", V[i]);
         if ((i + 1) % 10 == 0) {
