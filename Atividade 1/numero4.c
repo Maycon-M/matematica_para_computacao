@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 6
+#define N 40
 
 void read_array(int V[N]);
 int verify_condition(int V1[N], int V2[N], int x, int y);
