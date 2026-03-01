@@ -82,4 +82,8 @@ double euclideanNorm(int matrix[ROWS][COLS]) {
     }
 
     return sqrt(sumOfSquares);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> refs/remotes/origin/main
